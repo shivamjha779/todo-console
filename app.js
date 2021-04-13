@@ -18,6 +18,6 @@ while (userinput !== "quit") {
     console.log(`you removed ${deleted[0]}`);
   }
 
-  userinput = prompt("what would you like to do?");
+  userinput = prompt("what would you like to do?  | type 'quit' if not seeing instructions on screen");
 }
 console.log("you quited the app!");
