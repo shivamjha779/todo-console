@@ -1,4 +1,4 @@
-let userinput = prompt("what would you like to do?");
+let userinput = prompt("what would you like to do?  | type 'quit' if not seeing instructions on screen");
 const todos = ["homework", "making breakfast"];
 
 while (userinput !== "quit") {
@@ -7,7 +7,7 @@ while (userinput !== "quit") {
     for (let i = 0; i < todos.length; i++) {
       console.log(`${i}: ${todos[i]}`);
     }
-    console.log('#############');
+    console.log("#############");
   } else if (userinput == "new") {
     const newtodo = prompt("what is the new todo?");
     todos.push(newtodo);
@@ -16,7 +16,6 @@ while (userinput !== "quit") {
     const removetodo = prompt("enter the index which you want to remove!");
     const deleted = todos.splice(removetodo, 1);
     console.log(`you removed ${deleted[0]}`);
-
   }
 
   userinput = prompt("what would you like to do?");
