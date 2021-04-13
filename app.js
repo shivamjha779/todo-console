@@ -1,4 +1,4 @@
-let userinput = prompt("what would you like to do?  | type 'quit' if not seeing instructions on screen");
+let userinput = prompt("what would you like to do? | type 'quit' if not seeing instructions on screen");
 const todos = ["homework", "making breakfast"];
 
 while (userinput !== "quit") {
